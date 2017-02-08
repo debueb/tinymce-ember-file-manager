@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/debueb/tinymce-ember-file-manager.svg?branch=master)](https://travis-ci.org/debueb/tinymce-ember-file-manager)
-
 # TinyMCE Ember File-Manager
 
 This is an [Ember](http://emberjs.com/) application intended to be used as a file manager for the WYSIWYG HTML Editor [TinyMCE](https://www.tinymce.com/). It currently supports the following:
