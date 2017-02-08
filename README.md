@@ -5,6 +5,9 @@ This is an [Ember](http://emberjs.com/) application intended to be used as a fil
 - allows for folder browsing and file uploads
 - displays preview imagse with image size 
 
+![overview-1](https://raw.githubusercontent.com/debueb/tinymce-ember-file-manager/master/github/file-manager-1.png)
+![overview-2](https://raw.githubusercontent.com/debueb/tinymce-ember-file-manager/master/github/file-manager-2.png)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -52,11 +55,11 @@ Since tinymce will most likely already be integrated into your website, we need 
     <meta name="file-manager/config/environment" content="%7B%22modulePrefix%22%3A%22file-manager%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22none%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22file-manager%22%2C%22version%22%3A%220.0.0+117f8b00%22%7D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Atrue%7D"></meta>
     <div id="file-manager"></div>
     ```
-    The value of the `meta` tag is a url encoded json string that contains initialization info for the ember app. For reference, it url decodes to
+    - The value of the `meta` tag is a url encoded json string that contains initialization info for the ember app. For reference, it url decodes to
     ```json
     {"modulePrefix":"file-manager","environment":"production","rootURL":"/","locationType":"none","EmberENV":{"FEATURES":{}},"APP":{"name":"file-manager","version":"0.0.0 117f8b00"},"ember-cli-mirage":{"usingProxy":false,"useDefaultPassthroughs":true},"exportApplicationGlobal":true}
     ```
-    The `file-manager` div acts as a placeholder in which the ember application will be rendered
+    - The `file-manager` div acts as a placeholder in which the ember application will be rendered
 * in your `tinymce.init()` call, add the following :
     ```javascript
     file_picker_types: 'image',
