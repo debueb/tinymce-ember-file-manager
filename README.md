@@ -83,20 +83,21 @@ Since tinymce will most likely already be integrated into your website, we need 
     ```
     `basePath` is the URL to the endpoint that handles file browsing and upload. More specifically, you need to implement these two endpoints:
     - GET `{basePath}/list`, produces `application/json` in the following format
-       ```json
-        [
-            {
-                "type": "folder",
-                "name": "test folder"
-            },
-            {
-              "type": "file",
-              "name": "0807b54693809fc90800b45b77b10a35b6cc59d1cff54ae5970d6d6e27805d0d",
-              "url": "https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-              "fileSize": "6"
-            }
-        ]
-       ```
+    
+```json
+[
+    {
+        "type": "folder",
+        "name": "test folder"
+    },
+    {
+      "type": "file",
+      "name": "0807b54693809fc90800b45b77b10a35b6cc59d1cff54ae5970d6d6e27805d0d",
+      "url": "https://www.google.de/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+      "fileSize": "6"
+    }
+]
+```
     - POST `{basePath}/upload`, consumes `multipart/form-data`
         - handles image optimization and persistence for single `file` parameter
         - returns String containing the URL to the image
