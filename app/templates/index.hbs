@@ -1,0 +1,31 @@
+{{#if model.showSpinner}}
+  {{loading-spinner}}
+{{/if}}
+<div class="file-manager">
+    <div class="file-manager-header">Image Manager
+        <div class="pull-right">
+          <span {{action 'close'}}><i class="fa fa-close"></i></span>
+        </div>
+    </div>
+    <div class="file-manager-toolbar">
+        <a {{action 'selectLevel' -1}}><i class="fa fa-2x fa-home"></i></a>
+        {{#each model.paths as |path index|}}
+          <a {{action 'selectLevel' index}}>/ {{path.name}}</a>
+        {{/each}}
+        <div class="pull-right">
+            {{#file-input multiple=true action="didSelectFiles" accept="image/png,image/jpg,image/jpeg"}}
+                <a class="fa-stack">
+                  <i class="fa fa-file fa-stack-2x"></i>
+                  <i class="fa fa-plus fa-inverse fa-stack-1x"></i>
+                </a>
+            {{/file-input}}
+        </div>
+    </div>
+    <div>
+      <div class="file-manager-body">
+          {{#each model.data as |obj|}}
+              {{file-folder model=obj selectFolder="selectFolder" selectFile="selectFile"}}
+          {{/each}}
+      </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+{{#if isFolder}}
+<a {{action 'selectFolder' model}}>
+  <i class="fa fa-folder"></i>
+  {{model.name}}
+</a>
+{{else}}
+<a {{action 'selectFile' model}}>
+  <img src="{{model.url}}">
+  {{number-to-human-size model.fileSize}}
+</a>
+{{/if}}
