@@ -1,9 +1,10 @@
+[![Build Status](https://travis-ci.org/debueb/tinymce-ember-file-manager.svg?branch=master)](https://travis-ci.org/debueb/tinymce-ember-file-manager)
+
 # TinyMCE Ember File-Manager
 
 This is an [Ember](http://emberjs.com/) application intended to be used as a file manager for the WYSIWYG HTML Editor [TinyMCE](https://www.tinymce.com/). It currently supports the following:
-- images only (image/png, image/jpeg, image/jpg)
-- allows for folder browsing and file uploads
-- displays preview imagse with image size 
+- folder and image browsing in a grid view, displaying image size instead of name
+- image uploads
 
 ![overview-1](https://raw.githubusercontent.com/debueb/tinymce-ember-file-manager/master/github/file-manager-1.png)
 ![overview-2](https://raw.githubusercontent.com/debueb/tinymce-ember-file-manager/master/github/file-manager-2.png)
